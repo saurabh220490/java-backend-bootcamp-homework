@@ -29,7 +29,7 @@ public class StaticChallenge {
         Rectangale r5 = new Rectangale();
         System.out.println(r5.getArea(10.55, 2.23));
 
-        System.out.println("total number of rectangles created " + r5.getNumOfRectangles());
+        System.out.println("total number of rectangles created " + Rectangale.getNumOfRectangles());
     }
 }
 
@@ -50,7 +50,7 @@ class Rectangale {
         return 2 * (width + height);
     }
 
-    public int getNumOfRectangles() {
+    public static int getNumOfRectangles() {
         return numOfRectangles;
     }
 
