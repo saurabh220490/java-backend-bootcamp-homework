@@ -14,7 +14,25 @@ The program should display a menu of options, and the user should be able to sel
 The program should continue to display the menu and allow the user to perform operations until they choose to quit.
 */
 
-public class ListHomework {
+import java.util.ArrayList;
+import java.util.List;
 
+public class ListHomework {
+public static void main(String[] args){
+    List<Integer> list = new ArrayList<>();
+    //list.
+    list.add(10);
+    list.add(20);
+    list.add(-10);
+    int min = list.get(0);
+    int max = list.get(0);
+   for(int l : list){
+        min = Math.min(min,l);
+        max = Math.max(max,l);
+        System.out.println(" "+l);
+    }
+   System.out.println(min +" is min number");
+    System.out.println(max +" is max number");
+}
 
 }

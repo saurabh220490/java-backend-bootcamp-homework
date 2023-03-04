@@ -8,8 +8,10 @@ Write code that calls the getFruits method and then iterates over the collection
  */
 
 public class IteratorExercise {
-
-
+    public static void main(String[] args) {
+        FruitSupplier fs = new FruitSupplier();
+        fs.getFruits().forEach(a -> System.out.println(a));
+}
 }
 
 
